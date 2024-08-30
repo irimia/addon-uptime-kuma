@@ -1,6 +1,7 @@
 ARG BUILD_FROM=ghcr.io/hassio-addons/base-nodejs:0.2.3
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
+ENV UPTIME_KUMA_DISABLE_FRAME_SAMEORIGIN=1
 
 # Set workdir
 WORKDIR /opt
